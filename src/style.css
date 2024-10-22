@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+header, h2{
+    text-align: center;
+}
+body{
+    color: aquamarine;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.home{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+div{
+    
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-content: center;
+    margin: 1rem;
+    padding:0;
+}
+.listaCategorias{
+    display:block;
+}
