@@ -1,31 +1,76 @@
-body {
-    background-color: black;
-}
-header, h2{
-    text-align: center;
-}
+
 body{
     color: aquamarine;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-.home{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-}
-div{
-    
-    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    justify-items: center;
+    background-color: black;
 }
 
-ul{
+.home{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+figure{
+    margin:0.5rem;
+}
+
+footer ul{
     display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    align-content: center;
-    margin: 1rem;
-    padding:0;
+    list-style-type: none;  
+}
+footer ul li{
+    margin-left:2rem;
+    margin-right: 2rem;
 }
 .listaCategorias{
     display:block;
+    list-style-type: none;
 }
+table{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+caption{
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+tr, td{
+    text-align: left;
+    vertical-align: top;
+    padding: 0.5rem;
+    
+}
+.detalle figure{
+    float: left;
+}
+.detalle ul.cocina{
+    list-style-type: none;
+    display:flex;
+}
+a{
+    text-decoration: none;
+    color:aquamarine;
+}
+a:hover{
+    color:darkgoldenrod;
+}
+a:hover img{
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+.fotos{
+    display:flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+.fotos img{
+    margin:0.5rem;
+}
+.esqui{
+    list-style-type: none;
+}
+
