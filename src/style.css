@@ -5,6 +5,7 @@ body{
     padding-right: 10rem;
     justify-items: center;
     background-color: black;
+    font-family: "Itim", "Montserrat", sans-serif;
 }
 
 .home{
@@ -13,6 +14,10 @@ body{
 }
 figure{
     margin:0.5rem;
+}
+figcaption{
+    font-style: italic;
+    font-size:small;
 }
 
 footer ul{
