@@ -1,12 +1,7 @@
 {
   "name": "p1",
   "version": "1.0.0",
-  "source": [
-    "src/portada.html",
-    "src/categoria.html",
-    "src/presentacion.html",
-    "src/enlaces.html"
-  ],
+  "source": "src/portada.html",
   "targets":{
 	"default":{
 		"publicUrl":"./"
