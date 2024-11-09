@@ -1,81 +1,43 @@
+class Slider {
+    constructor({
+        sliderSelector = '.slider',
+        sliderContainerSelector = '.slider_Container',
+        previousSelector = '.previous',
+        nextSelector = '.next',
+        transitionTime = 3000,
+    }={}){
+        this.slider = document.querySelector(sliderSelector);
+        this.slides = document.querySelectorAll(`${sliderContainerSelector} img`).length;
+        this.sliderContainer  = document.querySelector(sliderContainerSelector);
+        this.previousBtn = document.querySelector(previousSelector);
+        this.nextBtn = document.querySelector(nextSelector);
+        this.slidesSize = this.slider.offsetWidth;
+        this.currentSlide = 0;
 
+        this.setEventListeners();
 
-
-let fotos = [
-    {
-        "url":"img/VA1.jpg"
-    },
-    {
-        "url":"img/VA2.jpeg"
-    },
-    {
-        "url":"img/VA5.jpg"
-    },
-    {
-        "url":"img/VA6.jpg"
-    },
-    {
-        "url":"img/VA9.jpg"
-    },
-    {
-        "url":"img/VA10.jpg"
-    },
-    {
-        "url":"img/VA11.jfif"
-    },
-    {
-        "url":"img/VA12.jfif"
-    },
-    {
-        "url":"img/VA13.jfif"
-    },
-    {
-        "url":"img/VA18.jpg"
-    },
-    {
-        "url":"img/VA16.jpg"
-    },
-    {
-        "url":"img/VA17.jpg"
-    },
-]
-
-
-
-let atras = document.getElementById("atras");
-let avanzar = document.getElementById("avanzar");
-let imagen = document.getElementById("pic");
-let puntos = document.getElementById("puntos");
-let actual = 0;
-posicionCarrusel();
-
-atras.addEventListener('click', function(){
-    actual -=1;
-    if (actual==-1){
-        actual= fotos.length - 1;
     }
-    imagen.innerHTML =`<img class="pic" src="${fotos[actual].url}" loading="lazy">`
-    posicionCarrusel()
-})
 
-avanzar.addEventListener('click', function(){
-    actual +=1;
-    if (actual==fotos.length){
-        actual= 0;
+    moveSlides(){
+        this.sliderContainer.style.transform = `translateX(-${this.currentSlide * this.slidesSize}px)`;
+       /*this.sliderContainer.style.transform = `translateX(-${this.currentSlide * this.slidesSize}px)`;*/
     }
-    imagen.innerHTML =`<img class="pic" src="${fotos[actual].url}" loading="lazy">`
-    posicionCarrusel()
-})
 
-function posicionCarrusel(){
-    puntos.innerHTML="";
-    for (let i=0; i<fotos.length;i++){
-        if (i==actual){
-            puntos.innerHTML += '<p class="bold">.</p>'
-        }
-        else{
-            puntos.innerHTML += '<p>.</p>'
-        }
-        
+    nextSlide(){
+        console.log(this);
+        this.currentSlide = this.currentSlide >= this.slides -1 ? 0 : this.currentSlide +1;
+        this.moveSlides();
+    }
+
+    previousSlide(){
+        this.currentSlide = this.currentSlide <= 0 ? this.slides - 1 : this.currentSlide - 1;
+        this.moveSlides();
+    }
+    
+    setEventListeners(){
+        this.previousBtn.addEventListener('click', this.previousSlide.bind(this));
+        this.nextBtn.addEventListener('click', this.nextSlide.bind(this))
     }
 }
+
+new Slider();

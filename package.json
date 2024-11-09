@@ -1,7 +1,17 @@
 {
   "name": "p1",
   "version": "1.0.0",
-  "source": ["src/portada.html", "src/categoria.html", "src/presentacion.html", "src/enlaces.html"],
+  "source": [
+    "src/portada.html",
+    "src/categoria.html",
+    "src/presentacion.html",
+    "src/enlaces.html"
+  ],
+  "targets":{
+	"default":{
+		"publicUrl":"./"
+	}
+  },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "parcel:dev": "parcel",
@@ -15,8 +25,14 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.12.0",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "@parcel/babel-plugin-transform-runtime": "^2.12.0",
+    "@parcel/babel-preset-env": "^2.12.0"
   }
 }
