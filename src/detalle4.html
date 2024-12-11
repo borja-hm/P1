@@ -9,8 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header><h1>Val d'Arán</h1></header>
+    <header>
+      <img src="img/logo_small.jpg" alt="">
+      <h1>Val d'Arán</h1>
+    </header>
     <h2>Gastronomía tradicional aranesa</h2>
+    <div>
+      <img src="img/VA26.jpg" srcset="img/VA26_25%.jpg 160w, img/VA26_50%.jpg 320w, img/VA26_75%.jpg 480w, img/VA26.jpg 600w" sizes="(min-width: 900px) 50vw, (max-width: 899px) 40vw, (max-width: 500px) 35vw, 40vw"  alt="Gastronomia de la Vall d'Aran">
+    </div>
     <div class="detalle">
       <p>
         A lo largo de la historia, y en su afán de comerciar con franceses o españoles, los 
@@ -31,24 +37,51 @@
       </p>
     <h3>Algunos platos top de la Val d'Arán</h3>
     <ul class="cocina">
-        <li><figure><img src="img/VA18.jpg" alt="Olla Aranesa" width="205" height="150">
+        <li><figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/VA18_150.jpg">
+            <source media="(min-width: 601px)" srcset="img/VA18_200.jpg">
+            <img src="img/VA18_200.jpg" alt="Olha aranesa">
+        </picture>
         <figcaption>Olha Aranesa</figcaption>
         </figure></li>
-        <li><figure><img src="img/VA19.jpg" alt="Civet de senglar" width="205" height="150">
+        <li><figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/VA19_150.jpg">
+            <source media="(min-width: 601px)" srcset="img/VA19_200.jpg">
+            <img src="img/VA19_200.jpg" alt="Civet de senglar">
+        </picture>
         <figcaption>Civer de senglar</figcaption>
         </figure></li>
-        <li><figure><img src="img/VA20.jpg" alt="Truchas a las finas hierbas" width="205" height="150">
+        <li><figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/VA20_150.jpg">
+            <source media="(min-width: 601px)" srcset="img/VA20_200.jpg">
+            <img src="img/VA20_200.jpg" alt="Truchas a las finas hierba">
+        </picture>
         <figcaption>Truchas a las finas hiervas</figcaption>
         </figure></li>
-        <li><figure><img src="img/VA21.jpg" alt="Confit de pato" width="205" height="150">
+        <li><figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/VA21_150.jpg">
+            <source media="(min-width: 601px)" srcset="img/VA21_200.jpg">
+            <img src="img/VA21_200.jpg" alt="Confit de pato">
+        </picture>  
         <figcaption>Confit de pato</figcaption>
         </figure></li>
-        <li><figure><img src="img/VA22.jpg" alt="Crepes" width="205" height="150">
+        <li><figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/VA22_150.jpg">
+            <source media="(min-width: 601px)" srcset="img/VA22_200.jpg">
+            <img src="img/VA22_200.jpg" alt="Crepes">
+        </picture>
         <figcaption>Crepes</figcaption>
         </figure></li>
     </ul>
     </div>
     <footer class="links">
+      <nav>
+        <img src="img/logo_small.jpg" alt="">
       <ul>
         <li><a href="categoria.html">ACTIVIDADES</a></li>
         <li><a href="detalle1.html">Senderismo y rutas</a></li>
@@ -56,6 +89,9 @@
         <li><a href="detalle3.html">Bici de montaña</a></li>
         <li><a href="enlaces.html">ENLACES DE INTERÉS</a</li>
       </ul>
+      
+      
+    </nav>
     </footer>
   
   </body>

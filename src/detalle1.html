@@ -9,10 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header><h1>Val d'Arán</h1></header>
+    <header>
+      <img src="img/logo_small.jpg" alt="">
+      <h1>Val d'Arán</h1>
+    </header>
     <h2>Rutas y senderismo por la Val d'Arán</h2>
     <div class="detalle">
-      <figure><img src="img/VA14.jfif" alt="Senderismo por Val d'Aran" width="265" height="160"></figure>
+      <figure>
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/VA1_small_150.jpg">
+          <source media="(min-width: 601px)" srcset="img/VA1_225.jpg">
+          <img src="img/VA1_225.jpg" alt="Val d'Aran village">
+      </picture>
+      
+      </figure>
       <p>El Valle de Arán -Val d'Aran en aranés- está situado en el extremo noroccidental 
         de Cataluña. El río Garona, que atraviesa toda la comarca, es su eje vertebrador. 
         El Garona desemboca sus aguas en el Atlántico, así pues, el Valle de Arán es la única 
@@ -49,7 +59,12 @@
         <li>Rutas difíciles</li>
     </ul>
     </div>
+    <img  srcset="img/VA14_200.jpg 200w, img/VA14_150.jpg 150w, img/VA14_225.jpg 225w" sizes="(min-width: 992px) 225px, (min-width: 600px) 200px, (max-width: 599px) 150px, 225px" src="img/VA14_225.jpg" alt="Val d'Aran rutas">
+    <img  srcset="img/VA10_200.jpg 200w, img/VA10_150.jpg 150w, img/VA10_225.jpg 225w" sizes="(min-width: 992px) 225px, (min-width: 600px) 200px, (max-width: 599px) 150px, 225px" src="img/VA10_225.jpg" alt="Val d'Aran rutas">
     <footer class="links">
+      <nav>
+        <img src="img/logo_small.jpg" alt="">
+      
       <ul>
         <li><a href="categoria.html">ACTIVIDADES</a></li>
         <li><a href="detalle2.html">Esquiar</a></li>
@@ -57,6 +72,7 @@
         <li><a href="detalle4.html">Gastronomia</a></li>
         <li><a href="enlaces.html">ENLACES DE INTERÉS</a></li>
       </ul>
+    </nav>
     </footer>
   
   </body>

@@ -9,10 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header><h1>Val d'Arán</h1></header>
+    <header>
+      <img src="img/logo_small.jpg" alt="">
+      <h1>Val d'Arán</h1>
+    </header>
     <h2>Esquiar en la Val d'Aran</h2>
     <div class="detalle">
-      <figure><a href="https://baqueira.s3.eu-central-1.amazonaws.com/pro/2023-10/MAPA%20BAQUEIRA%2023%3A24.jpg?VersionId=yxZBk5d7CrQigt23FEnLkefI3SzdGybc" target="_blank"><img src="img/VA15.jpg" alt="Mapa de pistas Baqueira Beret" width="265" height="160"></a></figure>
+      <figure>
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/VA5_small_200.jpg">
+          <source media="(min-width: 601px)" srcset="img/VA5_225.jpg">
+          <img src="img/VA5_225.jpg" alt="Val d'Aran village">
+      </picture>
+        
+      </figure>
       <p>Baqueira Beret tiene una capacidad de transporte de 59 424 esquiadores por hora, 
         una superficie para esquiar de 2166 ha, 165  km de pistas pisadas, 7 km de itinerarios, 
         10 km de esquí de fondo y 1101 metros de desnivel. 
@@ -42,7 +52,16 @@
         <li>Centro médico</li>
     </ul>
     </div>
+    <a href="https://baqueira.s3.eu-central-1.amazonaws.com/pro/2023-10/MAPA%20BAQUEIRA%2023%3A24.jpg?VersionId=yxZBk5d7CrQigt23FEnLkefI3SzdGybc" target="_blank">
+      <img  srcset="img/VA15_200.jpg 200w, img/VA15_350.jpg 350w, img/VA15_500.jpg 500w" sizes="(min-width: 992px) 500px, (min-width: 600px) 350px, (max-width: 599px) 200px, 500px" src="img/VA15_500.jpg" alt="Estación Baqueira Beret">
+    </a>
+    <div>
+      <img  srcset="img/VA25_200.jpg 200w, img/VA25_350.jpg 350w, img/VA25_500.jpg 500w" sizes="(min-width: 992px) 500px, (min-width: 600px) 350px, (max-width: 599px) 200px, 500px" src="img/VA25_500.jpg" alt="Esquiador alpino en medio del monte">
+    </div>
     <footer class="links">
+      <nav>
+        <img src="img/logo_small.jpg" alt="">
+      
       <ul>
         <li><a href="categoria.html">ACTIVIDADES</a></li>
         <li><a href="detalle1.html">Senderismo y rutas</a></li>
@@ -50,6 +69,7 @@
         <li><a href="detalle4.html">Gastronomía</a></li>
         <li><a href="enlaces.html">ENLACES DE INTERÉS</a></li>
       </ul>
+    </nav>
     </footer>
   
   </body>

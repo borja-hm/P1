@@ -1,6 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 
 body{
-    color: aquamarine;
+    color: rgb(127, 255, 212);
     padding-left: 10rem;
     padding-right: 10rem;
     justify-items: center;
@@ -8,7 +11,14 @@ body{
     font-family: "Itim", "Montserrat", sans-serif;
     font-size: 1rem;
 }
+header{
+    display:flex;
 
+}
+header img{
+    object-fit: contain;
+    margin-right:2rem;
+}
 .home{
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -25,6 +35,13 @@ ul{
 }
 table ul{
     list-style-type: square;
+}
+footer{
+    display:flex;
+}
+footer img{
+    object-fit: contain;
+    margin-right:1rem;
 }
 footer ul{
     display: flex;
@@ -72,6 +89,9 @@ a:hover img{
     transition: transform 0.5s;
     transform: scale(1.1);
 }
+nav a{
+    color:black;
+}
 .fotos{
     display:flex;
     flex-wrap: wrap;
@@ -83,6 +103,18 @@ a:hover img{
 }
 .esqui{
     list-style-type: none;
+}
+nav{
+    background-color: white;
+    
+}
+.bicis figcaption{
+    position: relative;
+    top: -55px;
+}
+.bicis img{
+    position: relative;
+    top: -30px;
 }
 @media screen and (max-width: 992px){
     body{
@@ -102,6 +134,14 @@ a:hover img{
         display:flex;
         flex-wrap: wrap;
     }
+    .bicis figcaption{
+        position: relative;
+        top: -25px;
+    }
+    .bicis img{
+        position: relative;
+        top: -20px;
+    }
 }
 @media screen and (max-width: 768px){
     body{
@@ -119,12 +159,18 @@ a:hover img{
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
-    table img{
-        width: 160px;
-        height:80px;
+    
+    .bicis figcaption{
+        position: relative;
+        top: -25px;
     }
+    .bicis img{
+        position: relative;
+        top: -20px;
+    }
+    
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 600px){
     body{
         padding-left:2.5rem;
         padding-right: 2.5rem;
@@ -138,18 +184,24 @@ a:hover img{
         margin-right: 0.5rem;
     }
     table{
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-left: 0 rem;
+        margin-right: 0 rem;
+        margin-top: 0 rem;
+        margin-bottom: 0 rem;
     }
     .detalle figure{
         float: none;
     }
-    table img{
-        width: 100px;
-        height:50px;
+    
+    .bicis figcaption{
+        position: relative;
+        top: 2px;
     }
+    .bicis img{
+        position: relative;
+        top: 0px;
+    }
+    
 }
 
 .slider{
@@ -193,4 +245,22 @@ a:hover img{
 .sliderControl button:hover{
     color:darkgoldenrod;
     cursor: pointer;
+}
+#bikes{
+    clip-path: circle(75px);
+}
+@keyframes colorMont {
+    0% {
+        fill:"white"
+    }
+    50% {
+        fill : rgb(127, 255, 212);
+    }
+    100% {
+        fill : "white"
+    }
+}
+svg polygon, svg text{
+    animation: colorMont 2s ease-in-out;
+    animation-iteration-count: infinite;
 }

@@ -9,32 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body class="portada">
-    <header><h1>Val d'Arán</h1></header>
+    <header>
+      <img src="img/logo_small.jpg" alt="">
+      <h1>Val d'Arán</h1>
+    </header>
     <p>Un valle atlántico en los Pirineos. Su orografía, con valles colgados, cimas superiores a los 2000 metros y nieves perpetuas, su gastronomía, su riqueza cultural, su singularidad idiomática y una oferta turística de alta calidad, hacen de este rincón del Pirineo un lugar excepcional. (ref:<a href="https://www.visitvaldaran.com/">Visita Val d'Arán</a>)</p>
     <div class="home">
       <figure>
-        <img src="img/VA1.jpg" alt="Val d'Aran village" width="305" height="200">
+        <img  srcset="img/VA1_200.jpg 200w, img/VA1_150.jpg 150w, img/VA1_225.jpg 225w" sizes="(min-width: 992px) 225px, (min-width: 600px) 200px, (max-width: 599px) 150px, 225px" src="img/VA1_225.jpg" alt="Val d'Aran village">
         <figcaption>Rutas y senderismo por la Val d'Arán</figcaption>
       </figure>
       <figure>
-        <img src="img/VA5.jpg" alt="Val d'Aran ski paradise" width="305" height="200">
+        <img srcset="img/VA5_200.jpg 200w, img/VA5_150.jpg 150w, img/VA5_225.jpg 225w" sizes="(min-width: 992px) 225px, (min-width: 600px) 200px, (max-width: 599px) 150px, 225px" src="img/VA5_225.jpg" alt="Val d'Aran ski paradise">
         <figcaption>Esquiar en Baqueira Beret</figcaption>
       </figure>
-      <figure>
-        <img src="img/VA6.jpg" alt="Val d'Aran mountain bike" width="305" height="200">
+      <figure class="bicis">
+        <img id="bikes"  srcset="img/VA6_200.jpg 200w, img/VA6_150.jpg 150w, img/VA6_225.jpg 225w" sizes="(min-width: 992px) 225px, (min-width: 600px) 200px, (max-width: 599px) 150px, 225px" src="img/VA6_225.jpg" alt="Val d'Aran mountain bike">
         <figcaption>Rutas en bicicleta por la Val d'Arán</figcaption>
       </figure>
       <figure>
-        <img src="img/VA9.jpg" alt="Val d'Aran gastronomy" width="305" height="200">
+        <img srcset="img/VA9_200.jpg 200w, img/VA9_150.jpg 150w, img/VA9_225.jpg 225w" sizes="(min-width: 992px) 225px, (min-width: 600px) 200px, (max-width: 599px) 150px, 225px" src="img/VA9_225.jpg" alt="Val d'Aran gastronomy">
         <figcaption>Deliciosa gastronomía de la Val d'Arán</figcaption>
       </figure>
     </div>
     <footer>
+     <nav>
+      <img src="img/logo_small.jpg" alt="">
+      
       <ul>
         <li><a href="categoria.html">ACTIVIDADES</a></li>
         <li><a href="presentacion.html">PRESENTACIÓN</a></li>
         <li><a href="enlaces.html">ENLACES DE INTERÉS</a></li>
       </ul>
+    </nav>
     </footer>
   
   </body>
