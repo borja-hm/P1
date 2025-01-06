@@ -224,7 +224,7 @@ nav{
     img{
         width:100%
     }
-
+    -moz-width: 224px;
 }
 .pic{
     object-fit: contain;
@@ -260,7 +260,11 @@ nav{
         fill : "white"
     }
 }
+
 svg polygon, svg text{
     animation: colorMont 2s ease-in-out;
     animation-iteration-count: infinite;
+}
+h1{
+    -moz-display: inline;
 }
