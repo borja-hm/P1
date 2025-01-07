@@ -264,7 +264,9 @@ nav{
         fill : "white"
     }
 }
-
+section{
+    text-align: center;
+}
 svg polygon, svg text{
     animation: colorMont 2s ease-in-out;
     animation-iteration-count: infinite;
