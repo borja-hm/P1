@@ -13,12 +13,13 @@ body{
 }
 header{
     display:flex;
+    justify-content: center;
 
 }
 header img{
     object-fit: contain;
     margin-right:2rem;
-    justify-content: center;
+    
 }
 .home{
     display: grid;
@@ -39,6 +40,7 @@ table ul{
 }
 footer{
     display:flex;
+    justify-content: center;
 }
 footer img{
     object-fit: contain;
@@ -234,6 +236,7 @@ nav{
 .photos{
     display:flex;
     flex-direction: row;
+    justify-content: center;
 }
 .sliderControl{
     position: relative;
@@ -265,7 +268,4 @@ nav{
 svg polygon, svg text{
     animation: colorMont 2s ease-in-out;
     animation-iteration-count: infinite;
-}
-h1{
-    -moz-display: inline;
 }
