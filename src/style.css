@@ -9,7 +9,7 @@ body{
     justify-items: center;
     background-color: black;
     font-family: "Itim", "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 header{
     display:flex;
